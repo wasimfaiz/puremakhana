@@ -205,9 +205,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-16">
             {[
-              { img: "packaging_classic_1772214444243.png", title: "Himalayan Pink Salt", weight: "100g", price: "$14.00" },
+              { img: "makhana_himalayan_bottle.png", title: "Himalayan Pink Salt", weight: "100g", price: "$14.00" },
               { img: "packaging_herb_1772214465282.png", title: "Truffle & Rosemary", weight: "100g", price: "$18.00" },
-              { img: "packaging_classic_1772214444243.png", title: "Smoked Paprika & Lime", weight: "100g", price: "$16.00" },
+              { img: "packaging_paprika.png", title: "Smoked Paprika & Lime", weight: "100g", price: "$16.00" },
               { img: "makhana_chocolate.png", title: "Dark Chocolate Coated", weight: "150g", price: "$22.00", badge: "New Arrival" },
               { img: "makhana_cookies.png", title: "Artisanal Makhana Cookies", weight: "200g", price: "$24.00", badge: "Patisserie" },
               { img: "makhana_supplement.png", title: "Plant Protein Supplement", weight: "500g", price: "$49.00", badge: "Wellness" }
