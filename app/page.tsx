@@ -42,7 +42,7 @@ export default function Home() {
           <div className="hidden md:flex space-x-12 text-sm tracking-widest uppercase font-medium">
             <Link href="/story" className="hover:text-gold transition-colors">Our Story</Link>
             <a href="#benefits" className="hover:text-gold transition-colors">Benefits</a>
-            <a href="#shop" className="hover:text-gold transition-colors">Product</a>
+            <Link href="/product" className="hover:text-gold transition-colors">Product</Link>
             <Link href="/blogs" className="hover:text-gold transition-colors">Blogs</Link>
           </div>
           <button className="bg-foreground text-surface hover:bg-gold border border-transparent hover:border-gold transition-all duration-300 px-6 py-3 uppercase tracking-wider text-xs font-semibold">
@@ -83,10 +83,10 @@ export default function Home() {
             </motion.p>
             
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-6">
-              <a href="#shop" className="group flex items-center justify-center bg-gold-dark text-surface px-8 py-4 text-sm uppercase tracking-wider font-semibold hover:bg-foreground transition-all duration-300">
+              <Link href="/product" className="group flex items-center justify-center bg-gold-dark text-surface px-8 py-4 text-sm uppercase tracking-wider font-semibold hover:bg-foreground transition-all duration-300">
                 Shop Now
                 <ArrowRight className="ml-3 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
               <Link href="/story" className="flex items-center justify-center border border-gold-dark text-gold-dark px-8 py-4 text-sm uppercase tracking-wider font-semibold hover:bg-gold-dark hover:text-surface transition-all duration-300">
                 Discover Our Story
               </Link>
@@ -377,7 +377,7 @@ export default function Home() {
             <div>
               <h4 className="font-serif text-xl mb-6">Explore</h4>
               <ul className="space-y-4 text-sm font-light text-foreground/70">
-                <li><a href="#shop" className="hover:text-gold transition-colors">Our Collection</a></li>
+                <li><Link href="/product" className="hover:text-gold transition-colors">Our Collection</Link></li>
                 <li><Link href="/story" className="hover:text-gold transition-colors">Our Story</Link></li>
                 <li><a href="#" className="hover:text-gold transition-colors">Journal</a></li>
                 <li><a href="#" className="hover:text-gold transition-colors">Contact</a></li>

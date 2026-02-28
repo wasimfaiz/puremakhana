@@ -41,7 +41,7 @@ export default function StoryPage() {
           <div className="hidden md:flex space-x-12 text-sm tracking-widest uppercase font-medium">
             <Link href="/story" className="text-gold transition-colors">Our Story</Link>
             <Link href="/#benefits" className="hover:text-gold transition-colors">Benefits</Link>
-            <Link href="/#shop" className="hover:text-gold transition-colors">Product</Link>
+            <Link href="/product" className="hover:text-gold transition-colors">Product</Link>
             <Link href="/blogs" className="hover:text-gold transition-colors">Blogs</Link>
           </div>
           <button className="bg-foreground text-surface hover:bg-gold border border-transparent hover:border-gold transition-all duration-300 px-6 py-3 uppercase tracking-wider text-xs font-semibold">
@@ -224,7 +224,7 @@ export default function StoryPage() {
                     </motion.p>
                     
                     <motion.div variants={fadeInUp}>
-                        <Link href="/#shop" className="inline-block bg-gold-dark text-surface px-10 py-5 text-sm uppercase tracking-wider font-semibold hover:bg-foreground transition-all duration-300">
+                        <Link href="/product" className="inline-block bg-gold-dark text-surface px-10 py-5 text-sm uppercase tracking-wider font-semibold hover:bg-foreground transition-all duration-300">
                             Discover The Collection
                         </Link>
                     </motion.div>
@@ -255,7 +255,7 @@ export default function StoryPage() {
             <div>
               <h4 className="font-serif text-xl mb-6">Explore</h4>
               <ul className="space-y-4 text-sm font-light text-foreground/70">
-                <li><Link href="/#shop" className="hover:text-gold transition-colors">Our Collection</Link></li>
+                <li><Link href="/product" className="hover:text-gold transition-colors">Our Collection</Link></li>
                 <li><Link href="/story" className="text-gold transition-colors">Our Story</Link></li>
                 <li><Link href="#" className="hover:text-gold transition-colors">Journal</Link></li>
                 <li><Link href="#" className="hover:text-gold transition-colors">Contact</Link></li>
