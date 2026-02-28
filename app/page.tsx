@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion, Variants } from "framer-motion";
-import { ArrowRight, Leaf, ShieldCheck, Dumbbell, Feather, Star, Instagram, Twitter, Facebook } from "lucide-react";
+import { ArrowRight, Leaf, ShieldCheck, Dumbbell, Feather, Star, Instagram, Twitter, Facebook, Zap } from "lucide-react";
+import { SiAmazon, SiFlipkart, SiSwiggy, SiZomato } from "react-icons/si";
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -41,7 +42,7 @@ export default function Home() {
           <div className="hidden md:flex space-x-12 text-sm tracking-widest uppercase font-medium">
             <Link href="/story" className="hover:text-gold transition-colors">Our Story</Link>
             <a href="#benefits" className="hover:text-gold transition-colors">Benefits</a>
-            <a href="#shop" className="hover:text-gold transition-colors">Shop</a>
+            <a href="#shop" className="hover:text-gold transition-colors">Product</a>
             <Link href="/blogs" className="hover:text-gold transition-colors">Blogs</Link>
           </div>
           <button className="bg-foreground text-surface hover:bg-gold border border-transparent hover:border-gold transition-all duration-300 px-6 py-3 uppercase tracking-wider text-xs font-semibold">
@@ -90,6 +91,51 @@ export default function Home() {
                 Discover Our Story
               </Link>
             </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Available On Section */}
+      <section className="py-16 bg-cream border-t border-b border-gold/5 z-20 relative">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-center text-[10px] uppercase tracking-[0.3em] text-foreground/40 font-semibold mb-10"
+          >
+            Also available at curated luxury partners
+          </motion.p>
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
+            }}
+            className="flex flex-wrap items-center justify-center gap-12 md:gap-24 opacity-60"
+          >
+            {[
+              { name: "Amazon", icon: SiAmazon },
+              { name: "Flipkart", icon: SiFlipkart },
+              { name: "Swiggy", icon: SiSwiggy },
+              { name: "Zomato", icon: SiZomato },
+              { name: "Blinkit", icon: Zap }
+            ].map((partner, idx) => (
+              <motion.div 
+                key={idx}
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+                }}
+                title={partner.name}
+                className="flex items-center gap-3 text-foreground hover:text-gold-dark hover:scale-110 transition-all duration-500 cursor-pointer"
+              >
+                <partner.icon className="w-10 h-10 md:w-12 md:h-12" />
+                <span className="font-sans text-xl font-semibold tracking-wide hidden md:block">{partner.name}</span>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </section>

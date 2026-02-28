@@ -41,7 +41,7 @@ export default function StoryPage() {
           <div className="hidden md:flex space-x-12 text-sm tracking-widest uppercase font-medium">
             <Link href="/story" className="text-gold transition-colors">Our Story</Link>
             <Link href="/#benefits" className="hover:text-gold transition-colors">Benefits</Link>
-            <Link href="/#shop" className="hover:text-gold transition-colors">Shop</Link>
+            <Link href="/#shop" className="hover:text-gold transition-colors">Product</Link>
             <Link href="/blogs" className="hover:text-gold transition-colors">Blogs</Link>
           </div>
           <button className="bg-foreground text-surface hover:bg-gold border border-transparent hover:border-gold transition-all duration-300 px-6 py-3 uppercase tracking-wider text-xs font-semibold">
